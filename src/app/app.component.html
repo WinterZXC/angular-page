@@ -1,0 +1,19 @@
+
+
+
+
+
+<div *ngIf="response" >
+  <div *ngFor="let frontPage of response.data.category.frontPage">
+    <div *ngIf="frontPage.highTimeline">
+      <div class="container" >
+        <h2>{{frontPage.header}}</h2>
+        <carousel [height]="380" [width]="1750" [cellWidth]="200" [cellsToShow] = 7 [cellsToScroll]="7" [autoplay]="false" >
+            <div *ngFor="let data of frontPage.data" class="carousel-cell">
+              <img [src]="data.verticalPhotos[0].photoUrlBase">
+            </div>
+          </carousel>
+      </div>
+    </div>
+    </div>
+</div>

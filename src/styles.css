@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #203443;
+    font-family: 'Myfont';
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url("/assets/NevisBold-KGwl.ttf") format("truetype");
+  }
